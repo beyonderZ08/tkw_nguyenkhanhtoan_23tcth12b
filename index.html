@@ -1,12 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vn">
+
 <head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bai kiem tra html cua NguyenKhanhToan</title>
 </head>
+
 <body>
     <h1>Bai kiem tra html</h1>
-    
+    <div>
+        <form action="">
+            <table width="60%" cellpanding="10">
+                <tr>
+                    <th colspan="2">
+                        <h2>Đăng ký</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <th><label for="first">Họ tên</label> </th>
+                    <td>
+                       
+                            <input type="text" id="first" name="first" placeholder="Nhập họ tên" required>
+                    </td>
+        </tr>
+        <tr>
+            <th><label for="hai">User name</label></th>
+            <td>
+               
+                    <input type="text" id="hai" name="hai" placeholder="Nhập tên đăng nhập" required>
+            </td>
+        </tr>
+        <tr>
+            <th> Mật khẩu </th>
+                <td> <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required></td>
+        </tr>
+        <tr>
+            <th> Nhập lại mật khẩu </th>
+        </tr>
+        <tr>
+            <th> Giới tính </th>
+            <td>
+                <input type="radio" name="gender" value="Nam" checked> Nam<br>
+                    <input type="radio" name="gender" value="Nữ"> Nữ<br>
+                    <input type="radio" name="gender" value="Khác"> khác
+                
+            </td>
+        </tr>
+        <tr>
+            <th> Ngày sinh</th>
+            <td>
+                <select name="day">
+                    <option value="ngay 1"> Ngày 1</option>
+                </select>
+
+                <select name="month">
+                    <option value="thang 1"> Tháng 1</option>
+                </select>
+
+                <select name="year">
+                    <option value="nam 2001"> Năm 2001</option>
+                </select>
+
+
+
+            </td>
+        </tr>
+        <tr>
+            <th> Địa chỉ</th>
+            <td>
+                <textarea id="comments" name="comments"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <th> Avatar</th>
+            <td>
+                <input type="file" name="Avatar">
+            </td>
+        </tr>
+        <tr>
+            <th> Sở thích</th>
+        </tr>
+        <td colspan="2"> 
+
+        </td>
+        
+
+        <tr>
+
+        </tr>
+
+
+
+        </table>
+        </form>
+    </div>
+
 </body>
+
 </html>
